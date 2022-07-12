@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0B2434;
+  font-family: 'Karla', sans-serif;
+}
+
+main {
+  background-color: #F5F5F5;
+  height: 400px;
+  max-width: 800px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-style: 25px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 18px;
+  margin: 25px;
+}
+
+.die-face {
+  width: 36px;
+  height: 36px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.die-num {
+  color: #2B283A;
+  font-weight: 700;
+}
+
+ .roll-dice {
+  height: 40px;
+  width: 92px;
+  border-radius: 4px;
+  border: none;
+  background-color: #5035FF;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+ }
+
+ .roll-dice:focus {
+  outline: none;
+ }
+
+ .roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+ }
